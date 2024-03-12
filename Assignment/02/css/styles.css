@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Times New Roman', Times, serif;
+    height: 100%;
+}
+
+body {
+    margin-top: 3px;
+    margin-left: 9px;
+    margin-right: 9px;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+#homepage {
+    display: grid;
+    grid-template-areas: 
+        "header header"
+        "local-menu main"
+        "footer footer";
+    grid-template-columns: 21% 3fr;
+    height: 100%;
+}
+
+header {
+    grid-area: header;
+    background-color: plum;
+    height: 100%;
+}
+
+.menubar {
+    height: 100%;
+    padding: 0;
+    margin:0;
+}
+
+.menu {
+    grid-area: header;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    height: 100%;
+}
+
+.menu li a {
+    display: block;
+    padding: 20px 15px;
+    text-align: center;
+}
+
+.menu li a:hover {
+    background-color: rebeccapurple;
+    color: white;
+
+}
+
+.local-menu li a {
+    display: block;
+    text-align: left;
+    margin-top: 25px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+}
+
+.local-menu li a:hover {
+    background-color: plum;
+    
+}
+
+.local-menu {
+    grid-area: local-menu;
+    background-color: pink;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    line-height: normal;
+    padding-left: 20px;
+    /* padding-right: 20px; */
+}
+
+main {
+    grid-area: main;
+    background-color: pink;
+
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 0;
+    margin-top: 0;
+    border-left: 1px solid black;
+}
+
+footer {
+    grid-area: footer;
+    padding-left: 20px;
+
+    background-color: plum;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    margin-top: 0;
+}

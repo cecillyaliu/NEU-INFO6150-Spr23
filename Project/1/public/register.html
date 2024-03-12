@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cats Save The Wold</title>
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body>
+    <header>
+    <h1 class="title-h1">Learn Abount the Hero Cats Around You</h1>
+        <div class="title-container">
+            <h2>Some Tips to Help Maintain Cats' Health</h2>
+            <a href="index.html">
+                <img src="http://placekitten.com/125/110?image=2" 
+                alt="Four cats stay together">
+            </a>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li class="menu-item">
+                    <button class="menu-button" type="button"><a href="index.html">Home</a></button>                    
+                </li>
+                <li class="menu-item">
+                    <button class="menu-button" type="button">About</button>
+                    <ul class="submenu">
+                        <li class="submenu-item"><a href="about.html" class="submenu-link">About us</a></li>
+                        <li class="submenu-item"><a href="" class="submenu-link">Website history</a></li>
+                        <li class="submenu-item"><a href="" class="submenu-link">Cats health plan</a></li>
+                        <li class="submenu-item"><a href="" class="submenu-link">Highly recommended snacks</a></li>
+                        <li class="submenu-item"><a href="" class="submenu-link">Cats tree buying discounts</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item">
+                    <button class="menu-button" type="button">Register</button>
+                        <ul class="submenu">
+                            <li class="submenu-item"><a href="register.html" class="submenu-link">Register</a></li>
+                            <li class="submenu-item"><a href="" class="submenu-link">Register rqequirements</a></li>
+                            <li class="submenu-item"><a href="" class="submenu-link">Missed the register deadline</a></li>
+                            <li class="submenu-item"><a href="" class="submenu-link">If I am a dog</a></li>
+                        </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form action="/register" method="POST">
+            <label class="form-row">
+                Name:
+                <input type="text" class="name" name="name" required/>
+            </label>
+            
+            <label class="form-row">
+                Email:
+                <input type="email" class="email" name="email" required/>
+            </label>
+
+            <label class="form-row">
+                Gender:
+                <select id="gende" name="gender">
+                    <option value="">[Plase select]</option>
+                    <option value="1">Female</option>
+                    <option value="2">Male</option>
+                    <option value="3">Transgender</option>
+                    <option value="4">Don't want to say</option>
+                    <option value="5">Redmond monkey</option>
+                    <option value="6">Costco cart</option>
+                </select>
+            </label>
+            
+            <label class="form-row">
+                Choose the living location for the cat:
+                <select id="reason" name="choice">
+                    <option value="">[Plase select]</option>
+                    <option value="1">Redmond</option>
+                    <option value="2">Seattle</option>
+                    <option value="3">Kirkland</option>
+                    <option value="4">Bellevue</option>
+                    <option value="5">Tacoma</option>
+                    <option value="6">Lynnwood</option>
+                </select>
+            </label>
+
+            <label class="form-row">
+                I fully understand the privacy policy.
+                <input type="checkbox" class="privacy-check" name="privacy-check" required/>
+            </label>
+
+            <button type="submit" class="form-row">Register</button>
+        </form>
+    </main>
+    <footer>
+        <nav>
+            <ul class="footer-menu">
+                <li><a href="">Contact with the nominated cats</a></li>
+                <li><a href="">Suggestions to make us better</a></li>
+                <li><a href="">Make an appointment</a></li>
+            </ul>
+        </nav>
+        <a class="footer-privacy" href="">See our privacy policy here.</a>
+    </footer>
+</body>
+</html>

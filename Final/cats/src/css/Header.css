@@ -1,0 +1,201 @@
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: skyblue;
+    width: 100%;
+    line-height: 1.2rem;
+}
+
+.header-title {
+    align-self: center;
+    padding: 2rem;
+    margin: auto;
+}
+
+.title-container {
+    display: flex;
+    flex-direction: row;
+    gap:1rem;
+    justify-content: space-between;
+}
+
+.header-nav__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    padding: 0;
+    margin: 0;
+
+    list-style: none;
+
+    background-color:lightblue;
+}
+
+.header-nav__link {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+}
+
+.header-nav__link:hover {
+    background-color: dodgerblue;
+    color: white;
+    
+}
+
+/* new */
+
+.menu-button{
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    text-decoration: underline;
+    color:rebeccapurple;
+}
+
+.menu-item:hover ,
+.menu-button:hover,
+.submenu-link:hover,
+.menu-button a:hover{
+    background-color: dodgerblue;
+    color: white;
+}
+
+.menu-item:hover .submenu,
+.menu-item:focus-within .submenu {
+    height: auto;
+}
+
+.submenu {
+    position: absolute;
+
+    height: 0;
+    padding: 0rem;
+
+    background-color: lightblue;
+    overflow: hidden;
+    list-style-type: none;
+}
+
+.submenu-link {
+    display: inline-block;
+    padding: 0.5rem;
+}
+
+.submenu-link:hover{
+    display: inline-block;
+    padding: 0.5rem;
+    background-color: palevioletred;
+    color: white;
+}
+
+/* hamburger */
+
+.hamburger-menu {
+    display: none;
+    position: relative;
+    margin-left: auto;
+    padding-right: 1rem;
+}
+
+.hamburger-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    padding: 0;
+}
+
+.bar {
+    background-color: #333;
+    height: 2px;
+    width: 100%;
+}
+
+.menu {
+    display: none;
+}
+
+.menu-open {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: auto;
+    background-color: lightblue;
+    padding-top: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.menu-open li {
+    list-style: none;
+    line-height: 1.2rem;
+}
+
+.hamburger-menu-button a{
+    padding: 0;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.hamburger-menu-button{
+    padding: 0.5rem;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+
+.hamburger-menu.active .menu {
+    display: flex;
+}
+
+.hamburger-menu-button:hover,
+.hamburger-menu-button:focus {
+    background-color: dodgerblue;
+    color:white;
+}
+
+.hamburger-menu-button a {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.hamburger-menu-button a:hover,
+.hamburger-menu-button a:focus,
+.hamburger-menu-button a:focus-within
+{
+    background-color: dodgerblue;
+    color:white;
+}
+
+@media (max-width: 44rem) {
+
+    header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .header-nav__list{
+        display: none;
+    }
+
+    .hamburger-menu{
+        display: flex;
+    }
+
+    .header-nav__list ul {
+        display: none;
+        flex-direction: column;
+        background-color: burlywood;
+    }
+
+}

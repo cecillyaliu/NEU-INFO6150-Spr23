@@ -1,0 +1,59 @@
+1. Image: cat1.jpeg
+   Source: http://placekitten.com/200/200?image=1
+   License: Free to use (Placekitten License)
+
+2. Image: cat2.jpeg
+   Source: http://placekitten.com/200/200?image=3
+   License: Free to use (Placekitten License)
+
+3. Image: cat3.jpeg
+   Source: http://placekitten.com/200/200?image=13
+   License: Free to use (Placekitten License)
+
+4. Image: cat4.jpeg
+   Source: http://placekitten.com/200/200?image=14
+   License: Free to use (Placekitten License)
+
+5. Image: cat5.jpeg
+   Source: http://placekitten.com/200/200?image=15
+   License: Free to use (Placekitten License)
+
+6. Image: cat6.jpeg
+   Source: http://placekitten.com/200/200?image=16
+   License: Free to use (Placekitten License)
+
+7. Image: cat7.jpeg
+   Source: http://placekitten.com/200/200?image=12
+   License: Free to use (Placekitten License)
+
+8. Image: cat8.jpeg
+   Source: http://placekitten.com/200/200?image=11
+   License: Free to use (Placekitten License)
+
+9. Image: cat9.jpeg
+   Source: http://placekitten.com/200/200?image=10
+   License: Free to use (Placekitten License)
+
+10. Image: cat10.jpeg
+   Source: http://placekitten.com/200/200?image=9
+   License: Free to use (Placekitten License)
+
+11. Image: cat11.jpeg
+   Source: http://placekitten.com/200/200?image=8
+   License: Free to use (Placekitten License)
+
+12. Image: cat12.jpeg
+   Source: http://placekitten.com/200/200?image=7
+   License: Free to use (Placekitten License)
+
+13. Image: cat13.jpeg
+   Source: http://placekitten.com/200/200?image=6
+   License: Free to use (Placekitten License)
+
+14. Image: cat14.jpeg
+   Source: http://placekitten.com/200/200?image=5
+   License: Free to use (Placekitten License)
+
+15. Image: cat15.jpeg
+   Source: http://placekitten.com/100/100?image=1
+   License: Free to use (Placekitten License)

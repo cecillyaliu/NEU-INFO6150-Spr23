@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Js form - assignment 7</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script defer src="main.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header-menu">
+            <ul>
+                <li>About</li>
+                <li>Register</li>
+                <li>Application</li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <form class="register-form" action="/register" method="POST">
+            <label for="register-form__input--username" 
+                class="register-form__label--username">
+                Name:
+            </label>
+            <span class="register-form__reminder--message--username">Required*</span>
+            <span class="register-form__error--message-name error-visible">This field is required.</span>
+            <input id="register-form__input--username" 
+                class="register-form__input register-form__input--username" 
+                name="user-name" 
+                type="text"/>
+            
+            <label for="register-form__input--email" class="register-form__label--email">Email:</label>
+            <label for="register-form__input--email-confirmation" class="register-form__label--email-confirmation"> Confirm Email:</label>
+            <span class="register-form__reminder--message--email">Required*</span>
+            <span class="register-form__reminder--message--email-confirmation">Must match*</span>
+            <span class="register-form__error--message-email"></span>
+            <span class="register-form__error--message-email-confirmation"></span>
+
+            <input id="register-form__input--email" class="register-form__input register-form__input--email" name="user-email" type="text"/>
+            <input id="register-form__input--email-confirmation" class="register-form__input register-form__input--email-confirmation" name="user-email-confirm" type="text"/>
+
+            <input id="register-form__checkbox--wants-span" class="register-form__input register-form__checkbox--wants-span" type="checkbox" name="wants-span" checked/>
+            <label for="register-form__checkbox--wants-span" class="register-form__label--checkbox"> Do you want us to send you annoying emails?</label>
+
+            <label for="register-form__select--tier" 
+                class="register-form__label--select">Choose a tier:</label>   
+            <select id="register-form__select--tier" 
+                class="register-form__input register-form__select--tier" 
+                name="tier">
+            <option value="">[Please select]</option>
+            <option value="1">Silver Tier</option>
+            <option value="2">Gold Tier</option>
+            <option value="3">Platinum Tier</option>
+            </select>
+
+            <button class="register-form__button" type="submit">Register</button>
+
+        </form>
+    </main>
+    <footer>
+        <div class="footer-menu">
+            <ul>
+                <li>I guess you didn't notice here.</li>
+                <li>See our privacy policy</li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

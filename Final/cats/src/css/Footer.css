@@ -1,0 +1,46 @@
+.footer {
+    display: grid;
+    grid-template-areas: 
+    "footer-logo footer-title"
+    "footer-nav footer-nav";
+    grid-template-columns: autp 1fr;
+    background-color: skyblue;
+}
+
+.footer-logo {
+    grid-area: footer-logo;
+}
+
+.footer-title {
+    grid-area: footer-title;
+    align-self: center;
+}
+
+.footer-nav__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    padding: 0;
+    margin: 0;
+
+    list-style: none;
+}
+
+.footer__nav {
+    grid-area: footer-nav;
+    background-color: lightblue;
+}
+
+
+.footer-nav__link {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    font-size: 1.3re
+}
+
+.footer-nav__link:hover {
+    background-color: dodgerblue;
+    color: white;
+    
+}
