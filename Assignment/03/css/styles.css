@@ -1,0 +1,174 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Times New Roman', Times, serif;
+    height: 100%;
+}
+
+body {
+    margin:0
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+ul li a {
+    display: block;
+    padding: 20px 15px;
+    text-align: center;
+    color:blue;
+}
+
+ul li a:hover {
+    background-color: yellowgreen;
+    color: white;
+    border-radius: 0.75rem;
+}
+
+p {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align:justify;
+    margin: 0.5rem;
+    font-size: 1rem;
+}
+
+body {
+    display: grid;
+    grid-template-rows: auto auto 1fr;
+    margin: 0;
+    min-height: 100vh;
+    min-width: 500px;
+    font-family: sans-serif;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 0.5rem;
+    width: 100%;
+    padding: 0.5rem;
+    background-color: lightblue;
+}
+
+header {
+    background-color: cornflowerblue;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    width: 100%;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-top: 0.5rem;
+}
+
+.head-picture {
+    grid-column: span 2;
+    border-radius: 50%;
+}
+
+.head-title {
+    grid-column: span 10;
+    justify-self: center;
+}
+
+.menu {
+    grid-column: span 12;
+    width: 100%;
+}
+
+footer {
+    background-color: cornflowerblue;
+    font-size: 0.8rem;
+}
+
+.main-title {
+    grid-column: span 12;
+    justify-self: center;
+}
+
+h2 {
+    display: block;
+    font-size: 1.5rem;
+    margin-block-start: 0.83rem;
+    margin-block-end: 0.83rem;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+h3 {
+    margin: 0.5rem;
+}
+
+.card {
+    grid-column: span 4;
+    display: flex;
+    flex-direction: column;
+    padding: 0.25rem;
+    border: 1px solid blue;
+    border-radius: 1rem;
+    background-color: white;
+    align-items: center;
+    height: 100%;
+}
+
+.card-picture{
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding-top: 1rem;
+}
+
+.card-title {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: center;
+}
+
+.card-more {
+    padding: 0.5rem;
+    margin: 0 auto;
+    margin-top: auto;
+    margin-bottom: 1rem;
+    border: 3px solid yellowgreen;
+    border-radius: 0.75rem;
+    color: inherit;
+    background-color: yellowgreen;
+    text-decoration: none;
+    justify-self: flex-end;
+    font-size: 1rem;
+}
+
+.card-more:hover {
+    box-shadow: 5px 5px 2px rgb(55, 114, 225);
+    color:rgb(55, 114, 225);
+    font-weight: bold;
+}
+
+@media (max-width: 50rem) {
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        grid-column: span 12;
+        margin-bottom: 1rem;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .card-picture {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+}

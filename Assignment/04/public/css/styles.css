@@ -1,0 +1,151 @@
+html {
+    height: 100%;
+}
+
+body {
+    min-width: 500px;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+h1 {
+    color:rgb(87, 55, 14);
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+ul li a {
+    display: block;
+    padding: 15px 15px;
+    text-align: center;
+    color:rgb(87, 55, 14);
+    font-weight: bold;
+}
+
+ul li a:hover {
+    background-color: rgb(142, 90, 22);
+    color: white;
+    border-radius: 0.75rem;
+    height: auto;
+}
+
+:required {
+    border: 2px solid green;
+}
+
+:invalid {
+    border: 2px solid red;
+}
+
+
+header {
+    background-color:rgb(244, 205, 158);
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    width: 100%;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-top: 0.5rem;
+}
+
+.head-picture {
+    grid-column: span 2;
+    border-radius: 50%;
+}
+
+.head-title {
+    grid-column: span 10;
+    justify-self: center;
+}
+
+.menu {
+    grid-column: span 12;
+    width: 100%;
+    cursor: pointer;
+}
+
+main {
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 50vh;
+    margin: 0;
+    padding-top: 2rem;
+}
+
+
+form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap:1rem;
+    margin: 0;
+
+    width: 80%;
+    padding: 20px;
+    border-radius: 6px;
+    background: rgb(251, 243, 236);
+    box-shadow: 0 0 10px 0 rgb(142, 90, 22); 
+    height: 80%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    form {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    button {
+        grid-column: span 2;
+    }
+}
+
+
+.form-row {
+    width: 100%; 
+}
+
+label {
+    color:rgb(87, 55, 14);
+    font-weight: bold;
+}
+
+button.form-row {
+    width: 150px;
+
+    padding: 0.3rem;
+    margin: 0 auto;
+    margin-top: auto;
+    margin-bottom: 1rem;
+    border: 1px solid rgb(87, 55, 14);
+    border-radius: 0.75rem;
+    color: inherit;
+    background-color: bisque;
+    text-decoration: none;
+    justify-self: flex-end;
+    font-weight: bold;
+}
+
+button.form-row:hover {
+    box-shadow: 5px 5px 2px crimson;
+    color:crimson;
+    font-weight: bold;
+}
+
+footer {
+    background-color: rgb(244, 205, 158);
+
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}

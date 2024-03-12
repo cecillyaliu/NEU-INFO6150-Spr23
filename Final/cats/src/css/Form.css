@@ -1,0 +1,156 @@
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 30rem;
+    /* margin: 2rem 2rem; */
+    padding: 5rem;
+
+    border: 1px solid black;
+    border-radius: 16px;
+
+    background-color: white;
+}
+
+.form-page-container{
+    background-color: #eee;
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+}
+
+input {
+    margin-left: 1rem;
+}
+
+.information-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.information-container li {
+    list-style: none;
+}
+
+.button{
+    background-color:lightblue;
+    margin-top: auto;
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+    padding:0.5rem;
+    width: 5rem;
+    cursor: pointer;
+}
+
+.button:hover{
+    background-color:darkslateblue;
+    color: white;
+}
+
+.button-link {
+    text-decoration: underline;
+    cursor: pointer;
+    color: #007bff;
+}
+
+.button-link:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    color:indigo;
+}
+
+.button.ok{
+    width:2rem;
+    margin-left: 1rem;
+    margin-bottom: 0;
+}
+
+.error-message-username,
+.error-message-password,
+.error-message-email{
+    color: red;
+    font-size: 0.75rem;
+    grid-column: span 1;
+    
+}
+
+#label-username,
+#input-username,
+#label-password,
+#input-password,
+#label-email,
+#input-email,
+#label-select,
+#select-color,
+#label-additional,
+#input-additional,
+#label-shipping-address,
+#input-shipping-address,
+#label-billing-address,
+#input-billing-address,
+#label-checkbox-billing-address,
+#checkbox-billing-address,
+#label-select-age,
+#select-age,
+#label-select-detailed-age,
+#select-detailed-age{
+    grid-column: span 1;
+    margin-top: 1rem;
+}
+
+
+
+.confirm {
+    grid-column: span 2;
+}
+
+.cancel {
+    grid-column: span 2;
+}
+
+
+@media (max-width: 44rem) {
+
+    #label-username,
+    #input-username,
+    #label-password,
+    #input-password,
+    #label-email,
+    #input-email,
+    #label-select,
+    #select-color,
+    #label-additional,
+    #input-additional,
+    #label-shipping-address,
+    #input-shipping-address,
+    #label-billing-address,
+    #input-billing-address,
+    #label-checkbox-billing-address,
+    #checkbox-billing-address,
+    #label-select-age,
+    #select-age,
+    #label-select-detailed-age,
+    #select-detailed-age,
+    .error-message-username,
+    .error-message-password,
+    .error-message-email{
+        grid-column: span 2;
+    }
+
+    .confirm {
+        grid-column: span 2;
+    }
+
+    .cancel {
+        grid-column: span 2;
+    }
+
+}
+
+
+
+
+
+
+

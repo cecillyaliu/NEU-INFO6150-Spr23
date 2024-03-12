@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <img class="head-picture" src="http://placekitten.com/125/110?image=12" alt="kitten in human's hand">
+        <h1 class="head-title">Cats Healthy Living Tips</h1>
+        <nav class="menu">
+            <ul>
+                <li><a class="menu-choice" href="#">Apply to be a Speaker</a></li>
+                <li><a class="menu-choice" href="#">Activity Calender</a></li>
+                <li><a class="menu-choice" href="#">Website Background Story</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form action="/submit" method="POST">
+            <label class="form-row"> 
+                Name:
+                <input id="name" name="user-name" type="text" required/>
+            </label>
+
+            <label class="form-row"> 
+                Email:
+                <input id="email" name="user-email" type="email" required title="Please enter valid email address"/>
+            </label>
+
+            <label class="form-row"> 
+                Do you want us to send you annoying emails?
+                <input id="annoy-me" type="checkbox" name="annoy-me" checked/>
+            </label>
+
+            <label class="form-row">
+                Choose a tier:
+                <select id="tier" name="tier">
+                <option value="">[Please select]</option>
+                <option value="1">Silver Tier</option>
+                <option value="2">Gold Tier</option>
+                <option value="3">Platinum Tier</option>
+                </select>
+            </label>
+
+            <button class="form-row" type="submit">Register</button>
+        </form>
+    </main>
+    <footer>
+        <p>See our <a href="#">privacy policy</a>.</p>
+    </footer>
+</body>
+</html>
